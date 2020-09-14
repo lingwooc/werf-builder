@@ -13,7 +13,7 @@ RUN apt-get update &&\
         $(lsb_release -cs) \
         stable" &&\
     apt-get update &&\
-    apt-get install -y docker-ce-cli
+    apt-get install -y docker-ce-cli git
 
 RUN cd /usr/bin &&\
     curl -L https://raw.githubusercontent.com/werf/multiwerf/master/get.sh | bash
